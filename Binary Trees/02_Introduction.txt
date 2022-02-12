@@ -1,0 +1,31 @@
+A tree is non-linear data structure.
+
+
+Structure
+class Node {
+    public:
+        int data;
+        Node* left;
+        Node* right;
+};
+
+new keyword is used to create a new Node. Hence a new node is created inside
+memory heap and not stack.
+Therefor when we create a new node inside a solve() function it remains there.
+if we don't use new keyword then memory will be deallocated after function call.
+
+
+Important Terms
+Node - each point in a tree 
+Edge - connection between two nodes
+Ancestor - any node between root and current node including current Node 
+Leaves - Last level nodes 
+
+Level starts from 0
+Height - Total number of levels
+
+Types
+Skew Tree - At max one child
+Full Binary Tree - All levels are completely filled
+Complete binary Tree - All levels are filled except last level. From Left to right insertion
+Strict binary tree - 0 or 2 child. No 1 child.
