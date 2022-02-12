@@ -1,0 +1,24 @@
+extra: typedef pair<int, int> p
+
+Roughly represented as stack in cpp
+
+Two types - MIN Heap & Max Heap
+
+MIN heap -> priority_queue<int, vector<int>, greater<int>> maxH;
+Max heap -> priority_queue<int> minH;
+
+In c++ stl
+    push()
+    pop()
+    size()
+    empty()
+
+Identify question
+Keyword - k 
+Keyword - sorted
+
+Time Complexity - nlogK
+
+
+if need to find smallest element use maxH
+if need to find largest element use minH
