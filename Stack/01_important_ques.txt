@@ -1,0 +1,24 @@
+Identification
+    You will have an array (maybe heap or stack)
+    depending loops
+    for (int i to n) {
+        for (j=i to n) {
+        
+        }
+    }
+
+Nearest Greatest to Left
+Nearest Greatest to Right
+Nearest Smaller to Left
+Nearest Smaller to Right
+
+Stock span problem
+Maximum area of histogram
+Maximum area of rectangle in binary matrix
+
+Rain Water Trapping
+Implementing a Min Stack
+Implementing stack using heap
+The celebrity problem 
+Longest Valid Paranthesis
+Iterative TOH
