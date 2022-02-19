@@ -1,0 +1,49 @@
+Type 1
+    Adjacency matrix
+    - We form a V*V matrix.
+    - So for 5 vertex we make a 5*5 = 25 size matrix.
+    - Each cell represent an edge from vertex u to vertex v 
+    
+    Time and Space Complexity
+    - To find an edge, it takes constant time.
+      T(edge) = a[u][v] takes constant time.
+
+    - To find neighbours we have to traverse that row in matrix 
+      T(neighbours) = O(V) times 
+    
+    - It takes a V*V matrix to make Adjacency Matrix 
+      S(matrix) = O(V*V)
+      T(construct) = O(V*V)
+
+Type 2
+    Adjacency List
+    - We form an array of vectors
+    - So for 5 vertex we make an array of 5 size. Then at each index
+      we store an vector of edges from u to v. where u is current vertex 
+    
+    Time and Space Complexity
+    - To find an edge, it takes linear time.
+      T(edge) = O(neighbours)
+
+    - To find neighbours we have to traverse that vector at an index in array 
+      T(neighbours) = O(neighbours) 
+    
+    - It takes minimum an array of size V and vectors at each index 
+      S(list) = O(V+E)
+      T(construct) = O(V+E)
+    
+Type 3
+    Edge List
+    - We form an vector of pairs
+    - Each pair represent an edge (u, v) from u to v;
+    
+    Time and Space Complexity
+    - To find an edge, it takes linear time.
+      T(edge) = O(E)
+
+    - To traverse that vector 
+      T(traverse) = O(E) 
+    
+    - Space Complexity 
+      S(list) = O(E)
+      T(construct) = O(E)

@@ -1,0 +1,31 @@
+TC for DFS and BFS = O(V+E)
+SC for DFS and BFS = O(V+E)
+
+Graph - Set of vertices and edges
+
+Edges - Connection between two vertices
+    Two types - Directed and Undirected
+
+Types of graph - 
+    Undirected Graph - Graph with undirected edges
+    Directed Graph - Graph with directed edges 
+
+
+    Weighted Graph - Graph having edges with weights
+    Unweighted Graph - Graph having edges with no weights
+
+    Complete Graph - Each vertex is connected to every other vertex
+
+Indegree - No. of edges coming to a vertex
+Outdegree - No. of edges going out of a vertex 
+
+Bridge - It is an edge that connects graph. After removing that edge graph 
+         will be divided into more than one component
+
+Articulation Point - It is a vertex that connects graph. After removing this vertex 
+        graph will be divided into more than one component.
+
+Minimum Spanning Tree - It has V vertex and V-1 edges. We can go from one node to another
+        It is undirected mostly
+        
+
