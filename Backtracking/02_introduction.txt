@@ -1,0 +1,32 @@
+Defn  - It is an approach in which we try to find the solution
+    by try all the available options
+
+Identification - 
+
+    - High complexity - since we using all options
+
+    - constraints in question are very low
+        N < 10
+        N < 20
+        1 < N < 100
+    
+    - No guarantee of next step will give the solution
+
+Mainly 4 types
+ - Decision Making
+    N - Queen Problem
+
+ - Optimization
+    Source to Destination path 
+
+ - Permutation 
+    ABC - find all Permutation
+
+ - Subset
+    123 - find all subset
+
+
+Flow of backtracking
+    think like a inorder traversal of tree
+    since you passing data by reference
+    remove the current wrong solution from the answer set while backtracking
