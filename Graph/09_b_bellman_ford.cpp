@@ -3,7 +3,7 @@
 // Can work even with negative edges
 // use two loops
 // use edge list
-// update dis[v] when dis[v]
+// update dis[v] when dis[v] > dis[u] + g[u][v]
 
 // Time complexity - O(VE)
 
