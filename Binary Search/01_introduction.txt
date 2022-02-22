@@ -1,0 +1,31 @@
+if you are give a sorted array try to use binary search in it
+
+int arr[] = {1, 2, 3, 4, 5};
+Suppose a sorted array is given
+To search an element we can do 
+
+Linear Search
+    takes O(N) time
+
+Binary Search
+    takes O(logN) time 
+
+Important Questions - 
+
+Binary Search
+Order Agnostic Search
+First and last occurence
+Count of element in a sorted array 
+Number of times array is rotated
+Find an element in rotated array
+Searching a nearly rotated array
+Floor/Ceil of an element
+Next Letter
+Index of first '1' in sorted array
+find the position of an element in infinitely sorted array 
+Min difference element in sorted array
+Biotionic array max element 
+search in Biotionic array 
+search in row wise / col wise sorted array 
+find element in sorted array that appear only once 
+Allocated minimum number of pages 
