@@ -1,0 +1,7 @@
+Questions similar to Knapsack Problem
+Subset Sum
+Equal Sum Partition
+Count of Subset sum 
+Minimum subset sum diff
+Target Sum
+No of subset with give difference

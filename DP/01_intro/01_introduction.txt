@@ -1,0 +1,24 @@
+Dynamic programming is based on recursion
+will ask to find something Optimal = max profit, min cost
+can be solve by recursion for small inputs
+
+Identification
+1. Choices
+2. Over lapping sub-problems (more than 1 recursive call)
+
+Steps to solve
+1. First write recursive solution
+2. Then memoize
+3. if req then do bottom up
+
+Parent Question
+01 Knapsack (6);
+02 Unbound Knapsack (5);
+03 Fibonacci (7)
+04 LCS (15) (Longest common subsequence)
+05 LIS (10)
+06 Kadane Algorithm (6)
+07 Matrix Chain Multiplication (7)
+08 DP on trees (4)
+09 DP on grid (14)
+10 others (5)
