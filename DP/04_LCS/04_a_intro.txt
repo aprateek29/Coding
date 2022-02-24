@@ -1,0 +1,21 @@
+A subsequence is a sequence that appears in the same relative order, 
+but not necessarily contiguous. 
+For example, “abc”,  “abg”, “bdf”, “aeg”,  ‘”acefg”, .. etc 
+are subsequences of “abcdefg”.
+
+Question - 
+Longest common subsequence
+Longest common substring
+print lcs (subsequence)
+shortest common supersequence
+print scs 
+Min number of insert and deletion to make a == b 
+Longest Repeating subsequence
+Length of Longest subsequence of 'a' which is a substring in 'b'
+subsequence pattern matching
+count how many times 'a' appears as a subsequence in 'b'
+Longest palindromic subsequence
+Longest palindromic substring
+count of palindromic substring
+Min number of deletion in a string to make it a palindrome
+Min number of insertion in a string to make it a palindrome
