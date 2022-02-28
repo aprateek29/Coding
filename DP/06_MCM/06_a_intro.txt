@@ -1,0 +1,16 @@
+Identification and Format 
+Three variables - i, j, k
+An array or string
+i will be the first index 
+j will be the last index 
+Will break at every index k between i and j and 
+call recursively
+
+Question - 
+MCM
+Printing MCM
+Evaluate Expression to true or Boolean Paranthesis
+Min/Max value of a Expression
+Palindrome partitioning
+scrabmle string 
+Egg Dropping problem 
