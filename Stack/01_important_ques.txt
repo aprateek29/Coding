@@ -16,7 +16,6 @@ Stock span problem
 Maximum area of histogram
 Maximum area of rectangle in binary matrix
 
-Rain Water Trapping
 Implementing a Min Stack
 Implementing stack using heap
 The celebrity problem 
