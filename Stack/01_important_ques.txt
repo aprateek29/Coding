@@ -1,3 +1,7 @@
+Stuck during 1st revision
+stock span 
+
+
 Identification
     You will have an array (maybe heap or stack)
     depending loops
