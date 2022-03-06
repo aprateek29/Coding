@@ -1,3 +1,10 @@
+1st Revision Done
+    Do again
+        Tarjan Algorithm
+        Prims
+        Kruskal
+        and after
+
 Graph Basics
 Graph Representation
 
