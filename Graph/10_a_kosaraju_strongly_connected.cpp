@@ -1,34 +1,35 @@
 // Key Points
 // Used to find the strongly connected components
+// STEP1 - do dfsWithStack
+// STEP2 - reverse the link of the graph
+// STEP3 - do dfs
 
 #include <iostream>
-#include <vector>
 #include <stack>
-#define V 10
+#include <vector>
+#include <climits>
 using namespace std;
 
-void DFS(vector<int> adj[], int start, vector<bool> &vis, stack<int> &s) {
+void dfsWithStack(vector<int> adj[], int start, vector<bool> &vis, stack<int> &stk) {
     vis[start] = true;
-    for (auto node : adj[start]) {
-        if (!vis[node]) {
-            DFS(adj, node, vis, s);
-        }
-    }
-    s.push(start);
+    for (auto n : adj[start])
+        if (!vis[n])
+            dfsWithStack(adj, n, vis, stk);
+    stk.push(start);
 }
 
-void DFSTwo(vector<int> adj[], int start, vector<bool> &vis) {
-    // cout << start << " ";
+void dfs(vector<int> newAdj[], int start, vector<bool> &vis) {
+    cout << start << " ";
     vis[start] = true;
-    for (auto node : adj[start]) {
-        if (!vis[node]) {
-            DFSTwo(adj, node, vis);
-        }
-    }
+    for (auto n : newAdj[start])
+        if (!vis[n])
+            dfs(newAdj, n, vis);
 }
+
 
 int main() {
 
+    int V = 10;
     vector<int> adj[V];
 
     adj[0].push_back(1);
@@ -48,44 +49,35 @@ int main() {
     adj[8].push_back(5);
 
     adj[6].push_back(9);
+    stack<int> stk;
 
-    int start = 0;
     vector<bool> vis(V, false);
-    stack<int> s;
     for (int i = 0; i < V; i++) {
         if (!vis[i]) {
-            DFS(adj, start, vis, s);
+            dfsWithStack(adj, i, vis, stk);
         }
     }
 
     for (int i = 0; i < V; i++) {
         vis[i] = false;
     }
-
-    vector<int> adjTwo[V];
+    vector<int> newAdj[V];
 
     for (int i = 0; i < V; i++) {
         for (int j = 0; j < adj[i].size(); j++) {
-            cout << j << " ";
+            newAdj[adj[i][j]].push_back(i);
         }
-        cout << endl;
     }
 
-    // for (int i = 0; i < V; i++) {
-    //     for (auto node : adjTwo[i]) {
-    //         cout << node << " ";
-    //     }
-    //     cout << endl;
-    // }
+    while (!stk.empty()) {
+        int t = stk.top();
+        stk.pop();
+        if (!vis[t]) {
+            dfs(newAdj, t, vis);
+            cout << endl;
+        }
+    }
 
-
-    // while (!s.empty()) {
-    //     if (!vis[s.top()]) {
-    //         DFSTwo(adjTwo, s.top(), vis);
-    //         s.pop();
-    //         cout << endl;
-    //     }
-    // }
-
+    
     return 0;
 }
