@@ -1,6 +1,4 @@
-Stuck during 1st revision
-stock span 
-
+Done Last Revision
 
 Identification
     You will have an array (maybe heap or stack)
