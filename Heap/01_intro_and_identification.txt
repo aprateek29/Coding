@@ -1,11 +1,13 @@
+Done 1st Revision
+
 extra: typedef pair<int, int> p
 
 Roughly represented as stack in cpp
 
 Two types - MIN Heap & Max Heap
 
-MIN heap -> priority_queue<int, vector<int>, greater<int>> maxH;
-Max heap -> priority_queue<int> minH;
+MIN heap -> priority_queue<int, vector<int>, greater<int>> minH;
+Max heap -> priority_queue<int> maxH;
 
 In c++ stl
     push()
