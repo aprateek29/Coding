@@ -1,56 +1,42 @@
 #include <iostream>
 #include <string>
-#include <vector>
-#define N 3
-#define M 3
 using namespace std;
+#define r 3
+#define c 3
 
-bool isSafe(int row, int col, int maze[N][M]) {
-    if (maze[row][col] == 0) {
-        return false;
-    }
-    if (row < 0 || row > N || col < 0 || col > M) {
-        return false;
-    }
-    return true;
-}
+void solve(int i, int j, int m[r][c], string &curr) {
 
-void solve(int row, int col, vector<string> &paths, string currStr, int maze[N][M]) {
-    if (row == N-1 && col == M - 1) {
-        paths.push_back(currStr);
+    if (i < 0 || j < 0 || i >= r || j >= c || m[i][j] == 0) {
         return;
+    } 
+
+    if (i == r-1 && j == c-1) {
+        cout << curr << endl;
     }
 
-    int row_change[] = {0, -1, 0, 1};
-    int col_change[] = {-1, 0, 1, 0};
-    char dic[] = {'L', 'U', 'R', 'D'};
-    for (int i = 0; i < 4; i++) {
-        if (isSafe(row+row_change[i], col+col_change[i], maze)) {
-            maze[row][col] = 0;
-            currStr.push_back(dic[i]);
-            solve(row+row_change[i], col +col_change[i], paths, currStr, maze);
-            maze[row][col] = 1;
-            currStr.pop_back();
-        }
+    int rowC[] = {0, 0, -1, 1};
+    int colC[] = {1, -1, 0, 0};
+    int cha[] = {'R', 'L', 'U', 'D'};
+
+    for (int k = 0; k < 4; k++) {
+        curr.push_back(cha[k]);
+        m[i][j] = 0;
+        solve(i+rowC[k], j+colC[k], m, curr);
+        m[i][j] = 1;
+        curr.pop_back();
     }
 }
 
 int main() {
-    int n = N;
-    int m = M;
-    int maze[N][M] = {
+
+    int m[r][c] = {
         {1, 1, 0},
         {1, 1, 1},
         {0, 0, 1},
     };
-    vector<string> paths;
-    string currStr = "";
-    int row = 0, col = 0;
-    solve(row, col, paths, currStr, maze);
 
-    for (auto str : paths) {
-        cout << str << endl;
-    }
+    string curr = "";
+    solve(0, 0, m, curr);
 
     return 0;
 }
